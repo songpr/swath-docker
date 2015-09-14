@@ -18,15 +18,14 @@ RUN yum -y update && \
 
 RUN mkdir /opt/swath && \
     cd /opt/swath && \
-    ls -l && \
-    wget ftp://linux.thai.net/pub/ThaiLinux/software/libthai/libdatrie-${LIBDATRIE_VERSION}.tar.xz && \
+    wget http://linux.thai.net/pub/ThaiLinux/software/libthai/libdatrie-${LIBDATRIE_VERSION}.tar.xz && \
     tar -xf libdatrie-${LIBDATRIE_VERSION}.tar.xz && \
     rm libdatrie-${LIBDATRIE_VERSION}.tar.xz && \
     cd /opt/swath/libdatrie-${LIBDATRIE_VERSION} && \
     ./configure && make && make install
 
 RUN cd /opt/swath && \
-    wget -q ftp://linux.thai.net/pub/thailinux/software/swath/swath-${SWATH_VERSION}.tar.xz && \
+    wget http://linux.thai.net/pub/thailinux/software/swath/swath-${SWATH_VERSION}.tar.xz && \
     tar -xf swath-${SWATH_VERSION}.tar.xz && \
     rm swath-${SWATH_VERSION}.tar.xz && \
     cd /opt/swath/swath-${SWATH_VERSION} && \
