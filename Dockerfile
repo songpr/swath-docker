@@ -4,8 +4,8 @@ FROM centos:7
 MAINTAINER Pornchai Rungsirijaratthong <songpr@gmail.com>
 
 
-ENV LIBDATRIE_VERSION 0.2.9
-ENV SWATH_VERSION 0.5.3
+ENV LIBDATRIE_VERSION 0.2.10
+ENV SWATH_VERSION 0.5.5
 ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig/
 
 # Define SWATH_SRC_HOME variable
